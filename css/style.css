@@ -1,0 +1,95 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  transition: all 0 ease;
+}
+body {
+  background: url("../assets/img/ravenol_background.jpg") no-repeat center
+    center;
+  background-size: cover;
+  height: 3000px;
+}
+header {
+  margin-top: 2rem !important;
+}
+header nav ul {
+  list-style: none;
+  padding: 20px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 2px solid;
+  border-image: linear-gradient(-195.7deg, #0a2a6c, #00aaff) 1;
+  transform: skewX(-20deg);
+}
+header nav ul li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform: none;
+}
+header nav ul li a {
+  color: #2759a0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.063rem;
+  text-align: center;
+  transform: skew(20deg);
+}
+.floating-social {
+  position: sticky;
+  top: 50px;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  width: 50px;
+}
+
+.floating-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.floating-social ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.floating-social ul li i {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.floating-social ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.floating-social ul li a:hover {
+  color: #000;
+}
