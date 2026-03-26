@@ -54,6 +54,9 @@ header nav ul li a {
   color: rgba(14, 65, 117, 1);
   white-space: nowrap;
 }
+header nav ul li a:hover {
+  text-decoration: underline;
+}
 header nav ul li a.active {
   font-weight: 900;
   pointer-events: none;
@@ -62,6 +65,7 @@ header nav ul li a.active {
 header nav ul li button {
   border: none;
   transform: skew(20deg);
+  background: transparent;
 }
 header nav ul li button a i {
   font-size: 1.563rem;
@@ -145,6 +149,9 @@ header nav ul li button a i {
   font-weight: 600;
   color: rgba(14, 65, 117, 1);
 }
+.mobileMenu ul li a:hover {
+  text-decoration: underline;
+}
 .mobileMenu ul li a.active {
   font-weight: 900;
   pointer-events: none;
@@ -164,6 +171,24 @@ footer {
   background: rgba(255, 203, 0, 1);
   padding-top: 2rem;
   padding-bottom: 4rem;
+}
+footer .footerColumnContainer ul {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+footer .footerColumnContainer ul li a {
+  color: rgba(22, 22, 22, 1);
+  text-decoration: none;
+}
+footer .footerColumnContainer ul li a.active {
+  font-weight: 700;
+  pointer-events: none;
+  cursor: none;
+}
+footer .footerColumnContainer ul li a:hover {
+  text-decoration: underline;
 }
 footer .footerColumnContainer h3 {
   font-size: 1.375rem;
