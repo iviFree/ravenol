@@ -16,7 +16,7 @@ body,
   font-size: 16px;
   margin: 0;
   padding: 0;
-  transition: all 0 ease;
+  transition: none;
 }
 body {
   background: url("../assets/img/ravenol_background.jpg") no-repeat center
@@ -52,22 +52,27 @@ header nav ul li a {
   transform: skew(20deg);
   text-transform: uppercase;
   color: rgba(14, 65, 117, 1);
+  white-space: nowrap;
 }
 header nav ul li a.active {
   font-weight: 900;
+  pointer-events: none;
+  cursor: none;
 }
 header nav ul li button {
   border: none;
   transform: skew(20deg);
+}
+header nav ul li button a i {
+  font-size: 1.563rem;
 }
 .bannerContainer .carouselItem img {
   width: 100%;
   max-width: 1920px;
 }
 .floating-social {
-  position: sticky;
+  position: fixed;
   top: 50px;
-  right: 0;
   z-index: 1000;
   background-color: #fff;
   padding: 10px;
@@ -142,6 +147,8 @@ header nav ul li button {
 }
 .mobileMenu ul li a.active {
   font-weight: 900;
+  pointer-events: none;
+  cursor: none;
 }
 .mobileMenu .closeMenu {
   position: absolute;

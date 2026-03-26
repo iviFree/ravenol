@@ -61,8 +61,8 @@
   font-family: "Font Awesome 7 Free";
   font-size: 40px;
   line-height: 1;
-  opacity: 0.75;
-  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  color: rgba(14, 65, 117, 1);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -106,27 +106,20 @@
 .slick-dots {
   position: absolute;
   bottom: -25px;
-
   display: block;
-
   width: 100%;
   padding: 0;
   margin: 0;
-
   list-style: none;
-
   text-align: center;
 }
 .slick-dots li {
   position: relative;
-
   display: inline-block;
-
   width: 20px;
   height: 20px;
   margin: 0 5px;
   padding: 0;
-
   cursor: pointer;
 }
 .slick-dots li button {
@@ -155,27 +148,28 @@
   opacity: 1;
 }
 .slick-dots li button:before {
-  font-family: "slick";
-  font-size: 6px;
+  font-family: "Font Awesome 7 Free";
+  content: "\f111";
+  font-weight: 500;
+  font-size: 20px;
   line-height: 20px;
-
   position: absolute;
   top: 0;
   left: 0;
-
   width: 20px;
   height: 20px;
-
-  content: "•";
   text-align: center;
-
   opacity: 0.25;
-  color: black;
-
+  color: rgba(14, 65, 117, 1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: all 0.25s ease;
 }
 .slick-dots li.slick-active button:before {
-  opacity: 0.75;
-  color: black;
+  font-family: "Font Awesome 7 Free";
+  content: "\f111";
+  font-weight: 600;
+  color: rgba(14, 65, 117, 1);
+  opacity: 1;
+  transition: all 0.25s ease;
 }
